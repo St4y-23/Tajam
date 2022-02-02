@@ -1,0 +1,46 @@
+
+.works__box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $marginB;
+}
+
+.works__link{
+  display: flex;
+  color: $primary;
+
+  &:hover{
+    color: $second;
+
+    .arrow__icon{
+      fill: $second;
+      transform: rotate(-90deg) translateY(5px);
+    }
+  }
+}
+
+.works__link-text{
+  margin-right: 9px;
+  font-weight: 300;
+  transition: linear .2s;
+}
+
+.works__inner{
+  margin-bottom: $marginB;
+}
+
+.works__image{
+  padding: 0;
+
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.works__btn-box{
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,234 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  outline: none;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0;
+}
+
+body {
+  color: $primary;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+
+  &.active {
+    overflow: hidden;
+  }
+}
+
+.content {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container{
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.center {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.title{
+  @include titleFont;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.subtitle{
+  @include titleFont;
+  color: $text;
+}
+
+.text{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.line{
+  margin: 20px auto;
+  background-color: $second;
+  width: 50px;
+  height: 1px;
+}
+
+.btn{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: $second;
+  padding: 10px;
+  border: 1px solid $second;
+  border-radius: 0;
+  position: relative;
+  transition: linear .2s;
+  z-index: 2;
+  text-transform: uppercase;
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $second;
+    z-index: -1;
+    transition: linear .2s;
+  }
+
+  &:hover{
+    color: #fff;
+    box-shadow: 0 0 10px 2px #01948a;
+
+    &::before{
+      height: 100%;
+    }
+  }
+}
+
+.bgImage{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gradient{
+  background: rgb(9,5,47);
+  background: linear-gradient(90deg, rgba(9,5,47,.85) 0%, rgba(49,29,94,.85) 100%);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.box{
+  margin: 0 auto;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+
+// Burger
+.ham__box{
+  display: none;
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 40px;
+  display: block;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+
+

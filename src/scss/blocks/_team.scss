@@ -1,0 +1,54 @@
+
+.team__title{
+  color: #fff;
+}
+
+.team__subtitle{
+  color: #f9f9f9;
+}
+
+.team__line{
+  background-color: #fff;
+  opacity: 0.2;
+  height: 2px;
+}
+
+.team__items{
+  margin-bottom: $marginB;
+}
+
+.team__item{
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.team__item-image{
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+
+.team__item-wrap{
+  padding: 20px;
+  text-align: center;
+  border: 1px solid  rgba(#e7e7e7, .5);
+}
+
+.team__item-name{
+  color: #fff;
+}
+
+.team__item-position{
+  color: rgba(#fafafa, .7);
+}
+
+.team__join{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__text{
+  color: #f3f3f3;
+  margin-bottom: 25px;
+}

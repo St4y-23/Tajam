@@ -1,0 +1,23 @@
+$text: #2f2d35;
+$primary: #413d4b;
+$second: #00e0d0;
+$grey: #333333;
+$marginB: 70px;
+$marginS: 30px;
+
+
+@mixin center{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin titleFont{
+  font-family: 'Playfair Display', serif;
+}
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+.bg-facebook {
+  width: 7px; height: 15px;
+  background: url('../img/sprites.png') -112px -49px;
+}
+
+.bg-dribbble {
+  width: 16px; height: 16px;
+  background: url('../img/sprites.png') -47px -75px;
+}
+
+.bg-play {
+  width: 37px; height: 45px;
+  background: url('../img/sprites.png') -10px -10px;
+}
+
+.bg-youtube {
+  width: 17px; height: 11px;
+  background: url('../img/sprites.png') -10px -112px;
+}
+
+.bg-phone {
+  width: 17px; height: 17px;
+  background: url('../img/sprites.png') -10px -75px;
+}
+
+.bg-pin {
+  width: 14px; height: 19px;
+  background: url('../img/sprites.png') -112px -10px;
+}
+
+.bg-google {
+  width: 15px; height: 14px;
+  background: url('../img/sprites.png') -146px -45px;
+}
+
+.bg-paper {
+  width: 25px; height: 25px;
+  background: url('../img/sprites.png') -67px -10px;
+}
+
+.bg-twitter {
+  width: 14px; height: 11px;
+  background: url('../img/sprites.png') -146px -79px;
+}
+
+.bg-insta {
+  width: 15px; height: 15px;
+  background: url('../img/sprites.png') -146px -10px;
+}
+
+.arrow__icon{
+  margin-top: -2px;
+  width: 11px;
+  height: 13px;
+  fill: rgba(#000, .7);
+  transform: rotate(-90deg);
+  transition: linear .2s;
+}
