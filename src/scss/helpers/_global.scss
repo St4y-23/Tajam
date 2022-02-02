@@ -177,6 +177,8 @@ body {
 // Burger
 .ham__box{
   display: none;
+  width: auto;
+  height: 35px;
 }
 .ham {
   cursor: pointer;
@@ -186,7 +188,8 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 40px;
+  width: 35px;
+  height: 35px;
   display: block;
   position: relative;
   z-index: 10;

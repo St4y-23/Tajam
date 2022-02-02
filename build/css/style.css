@@ -169,6 +169,8 @@ body.active {
 
 .ham__box {
   display: none;
+  width: auto;
+  height: 35px;
 }
 
 .ham {
@@ -179,7 +181,8 @@ body.active {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 40px;
+  width: 35px;
+  height: 35px;
   display: block;
   position: relative;
   z-index: 10;
@@ -826,11 +829,6 @@ body.active {
 @media (max-width: 625px) {
   .ham__box {
     display: flex;
-    width: auto;
-  }
-
-  .ham {
-    width: 35px;
   }
 
   .header__menu {
